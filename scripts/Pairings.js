@@ -1,19 +1,19 @@
 import { getChildren, getCelebrities } from "./database.js"
 
-const children = getChildren() //CT kids -> children
+const children = getChildren() //CT change kids -> children
 const celebrities = getCelebrities()
 
 const findCelebrityMatch = (kidObject, celebrityArray) => {
-    let celebrityMatch = null //CT change variable celebrity -> celebrityMatch
+    let celebrityMatch = null //CT change celebrity -> celebrityMatch
 
     for (const celebrity of celebrityArray) {  
         if (celebrity.id === kidObject.celebrityId){
             celebrityMatch = celebrity 
-        }//CT adding entire if statement
+        }//CT add entire if statement
         
     }
 
-    return celebrityMatch//was already here; CT fixed typo in word celebrity
+    return celebrityMatch//CT fix typo in word celebrity
 }
 
 export const Pairings = () => {

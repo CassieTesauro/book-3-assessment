@@ -1,6 +1,6 @@
 import { getCelebrities, getChildren } from "./database.js"
 
-//clickevent: X is a X
+//clickevent: see notes in kids.js module for details on what the code is doing.
 document.addEventListener(
     "click",
     (clickEvent) => {

@@ -19,7 +19,7 @@ const applicationHTML = `
 
 <article class="assignments">
     <h2>Pairings</h2>
-    ${Pairings()}
+    ${Pairings()} 
 </article>
 `
 
