@@ -36,7 +36,7 @@ const database = {  //database references the array of object arrays
         sport: "Baseball"
     }, {
         id: 8,
-        mane: "Tiffanie Tubby",
+        name: "Tiffanie Tubby",//CT fixed typo mane -> name
         email: "ttubby7@intel.com",
         sport: "Basketball"
     }, {
