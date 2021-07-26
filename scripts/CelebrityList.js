@@ -5,8 +5,8 @@ const celebrities = getCelebrities()
 export const Celebrities = () => {
     let html = "<ol>"
 
-    for (const star of celebrities) {
-        html += `<li id="star--${celebrity.id}">${celebrity.name}</li>`
+    for (const celebrity of celebrities) { //CT changed object variable from star to celebrity
+        html += `<li id="celebrity--${celebrity.id}">${celebrity.name}</li>` //CT changed id="star--  ->  id="celebrity--
     }
 
     html += "</ol>"
