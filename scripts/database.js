@@ -1,4 +1,4 @@
-const database = {
+const database = {  //database references the array of object arrays
     celebrities: [{
         id: 1,
         name: "Alphonse Meron",
@@ -13,7 +13,7 @@ const database = {
         id: 3,
         name: "Anna Bowton",
         email: "abowton2@wisc.edu",
-        spōrt: "Golf"
+        sport: "Golf" //CT fixed sport typo
     }, {
         id: 4,
         name: "Hunfredo Drynan",
@@ -69,7 +69,7 @@ const database = {
         id: 4,
         name: "Karine McKennan",
         celebrityId: 6,
-        wissh: "Drive a race car"
+        wish: "Drive a race car"  //CT changed wissh -> wish
     }, {
         id: 5,
         name: "Cissy Weavers",
@@ -89,7 +89,7 @@ const database = {
         id: 8,
         name: "Elisha Betchley",
         celebrityId: 2,
-        wissh: "Ride on a helicopter"
+        wish: "Ride on a helicopter"
     }, {
         id: 9,
         name: "Enrica Mathivon",
@@ -102,3 +102,16 @@ const database = {
         wish: "Put out a fire as a fireman after riding on the truck with the siren on"
     }]
 }
+
+//CT added exports for getCelebrities() and getChildren()
+
+export const getCelebrities = () => {
+    return database.celebrities.map(celebrity => ({...celebrity}))
+}
+
+export const getChildren = () => {
+    return database.children.map(child => ({...child}))
+}
+
+
+
